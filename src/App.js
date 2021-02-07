@@ -100,16 +100,14 @@ class App extends React.Component {
     };
 
     render() {
-        return ( <
-            div className = "App" >
-            <
-            br > < /br> <
-            h1 > Weather App < /h1><br></br >
-            <
-            Form loadWeather = { this.getWeather }
-            error = { this.state.error }
-            /> <
-            Weather city = { this.state.city }
+        return ( 
+        <div className = "App" >
+            <br></br> 
+            <h1> Weather App </h1><br></br>
+            <Form loadWeather = { this.getWeather }
+            error = { this.state.error }/> 
+            <Weather 
+            city = { this.state.city }
             temperature = { this.state.temperature }
             min = { this.state.min }
             max = { this.state.max }
@@ -118,10 +116,7 @@ class App extends React.Component {
             pressure = { this.state.pressure }
             weatherIcon = { this.state.icon }
             />
-
-
-            <
-            /div>
+            </div>
         )
     }
 }
